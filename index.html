@@ -11,7 +11,7 @@
     <title>Travel</title>
 </head>
 
-<body>
+<body class="body">
     <header class="flex column demo" id="section03">
         <nav class="flex between">
             <div class="logo">
@@ -58,24 +58,79 @@
                 </svg>
             </div>
             <img class="menu-image" src="./assets/img/menu.png" alt="">
-            <div class="menu">
+            <div class="menu flex ">
                 <div class="close-menu">
                     <i class="fa-solid fa-xmark"></i>
                 </div>
-                <div class="menu-tittles flex column">
-                    <h2>Home</h2>
-                    <h2>About</h2>
-                    <h2>Tours</h2>
-                    <h2>Tour single</h2>
-                    <h2>Services</h2>
-                    <h2>Services Single</h2>
-                    <div class="menu-socials flex">
-                        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href=""><i class="fa-brands fa-twitter"></i></a>
-                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <div class="menu-container flex">
+
+                    <div class="menu-tittles flex column">
+                        <h2>Home</h2>
+                        <h2>About</h2>
+                        <h2>Tours</h2>
+                        <h2>Tour single</h2>
+                        <h2>Services</h2>
+                        <h2>Services Single</h2>
+                        <div class="menu-socials flex">
+                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        </div>
                     </div>
+
+                    <div class="menu-tour flex column">
+                        <h2>The Best Tour</h2>
+                        <div class="menu-tour__image">
+                            <img src="https://images.unsplash.com/photo-1670909770613-6c876d23f695?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                alt="">
+                        </div>
+                        <div class="menu-tour__container flex">
+                            <div class="menu-tour__description">
+                                <h3>Canada Tour</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quibusdam.</p>
+                            </div>
+                            <div class="menu-tour__price flex column">
+                                <span>$1625.00</span>
+                                <span>$1889.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-travels flex column">
+                        <div class="menu-travels__container flex">
+                            <div class="menu-travels__image">
+                                <img src="https://images.unsplash.com/photo-1629973792189-18631b83e048?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+                                    alt="">
+                            </div>
+                            <div class="menu-travels__description flex column">
+                                <h3>Canada Tour</h3>
+                                <span>$1625.00</span>
+                            </div>
+                        </div>
+                        <div class="menu-travels__container flex">
+                            <div class="menu-travels__image">
+                                <img src="https://images.unsplash.com/photo-1521336575822-6da63fb45455?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                    alt="">
+                            </div>
+                            <div class="menu-travels__description flex column">
+                                <h3>Noruega Tour</h3>
+                                <span>$2725.00</span>
+                            </div>
+                        </div>
+                        <div class="menu-travels__container flex">
+                            <div class="menu-travels__image">
+                                <img src="https://images.unsplash.com/photo-1610123598147-f632aa18b275?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80"
+                                    alt="">
+                            </div>
+                            <div class="menu-travels__description flex column">
+                                <h3>Islandia Tour</h3>
+                                <span>$1899.00</span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+            </div>
             </div>
         </nav>
         <h1 class="white">Viaje</h1>
@@ -86,7 +141,7 @@
                 voluptatem</p>
             <button>leer más</button>
             <div class="scroll">
-                <a href="#about"><span></span>Scroll</a>
+                <a href="#about" id="scroll"><span id="scroll-sp"></span>Scroll</a>
             </div>
         </div>
     </header>
@@ -94,14 +149,90 @@
     <section id="section1">
         <h2>What do you know about us?</h2>
         <div class="container__section1">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptatum non facere optio repellendus commodi, in facilis, tenetur officiis ipsum quia illum dolore nesciunt nemo obcaecati a placeat doloribus et?Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, accusamus harum? Aut, vero neque. Nihil repellat repellendus aperiam quo voluptate obcaecati quasi minus.
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptatum non facere optio repellendus
+                commodi, in facilis, tenetur officiis ipsum quia illum dolore nesciunt nemo obcaecati a placeat
+                doloribus et?Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, accusamus harum? Aut,
+                vero neque. Nihil repellat repellendus aperiam quo voluptate obcaecati quasi minus.
             </p>
             <p>In the course of our work we organize countless trips for our clients. We started as a small travel
                 agency and soon expanded our list of offers. Today we have valuable travel experience and can recommend
                 the most impressive resorts, cities and countries to visit.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam vitae voluptas hic esse praesentium quas veniam, dolorem impedit facilis repellendus laboriosam, exercitationem pariatur repudiandae, eos alias earum sed voluptatem rem.
-            Veniam beatae eveniet.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam vitae voluptas hic esse praesentium quas
+                veniam, dolorem impedit facilis repellendus laboriosam, exercitationem pariatur repudiandae, eos alias
+                earum sed voluptatem rem.
+                Veniam beatae eveniet.</p>
             <button>Read More</button>
+        </div>
+    </section>
+    <!-- section popular travels -->
+    <section id="section02">
+        <h2>Find Out Most Popular Destinations</h2>
+        <div class="container-cards flex between">
+
+            <div class="card-image flex column" id="card1">
+                <div class="card-image__description column flex">
+
+                    <h3>Norway Tour</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span>$2000 +</span>
+                </div>
+            </div>
+            <div class="card-image flex column" id="card2">
+                <div class="card-image__description column flex">
+
+                    <h3>Norway Tour</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span>$2000 +</span>
+                </div>
+            </div>
+            <div class="card-image flex column" id="card3">
+                <div class="card-image__description column flex">
+
+                    <h3>Norway Tour</h3>
+                    <div class="stars flex">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span>$2000 +</span>
+                </div>
+            </div>
+        </div>
+        <button>See More</button>
+    </section>
+    <!-- section our services -->
+    <section id="section4">
+        <h2>What can we offer you</h2>
+        <div class="container-information flex column">
+            <div class="information flex column">
+                <h3>Various Destinations</h3>
+                <p>We offer a great number of tours to different destinations. You have a wide selection of places to
+                    visit with us!</p>
+            </div>
+            <div class="information flex column">
+                <h3>Everything is Included</h3>
+                <p>No worries from your side! We take care of air flights, hotel booking, transfer and other travelling
+                    details!</p>
+            </div>
+            <div class="information flex column">
+                <h3>Affordable Prices</h3>
+                <p>There are various price categories for different tours in our agency. Either student or businessman can afford a journey!.</p>
+            </div>
+
         </div>
     </section>
     <script src="./assets/js/app.js"></script>
